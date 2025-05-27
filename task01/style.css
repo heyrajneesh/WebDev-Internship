@@ -1,0 +1,157 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: #ecf0f1;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #ecf0f1;
+  margin: 0 0.25rem;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburger.toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2c3e50;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
