@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!--  Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyBlog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Home Section -->
+<section id="home" class="py-5 text-center text-white bg-primary">
+  <div class="container">
+    <h1>Welcome to My Blog</h1>
+    <p class="lead">A place to share knowledge and ideas.</p>
+  </div>
+</section>
+
+<!-- Posts Section -->
+<section id="posts" class="container my-5">
+  <h2 class="mb-4 text-center">Recent Blog Posts</h2>
+  <!-- Your blog cards here -->
+</section>
+
+
+
+
+
+  <!--Blog Cards -->
+  <div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Tech">
+        <div class="card-body">
+          <h5 class="card-title">The Future of Tech</h5>
+          <p class="card-text">Explore how AI and blockchain are transforming industries at lightning speed.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1749224186576-639a7ae9e709?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Nature">
+        <div class="card-body">
+          <h5 class="card-title">Nature and Wellbeing</h5>
+          <p class="card-text">Discover how connecting with nature improves mental health and focus.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Coding">
+        <div class="card-body">
+          <h5 class="card-title">Learn to Code</h5>
+          <p class="card-text">A beginner’s guide to mastering programming with fun projects and tips.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Books">
+        <div class="card-body">
+          <h5 class="card-title">Top 10 Books in 2024</h5>
+          <p class="card-text">From thrillers to self-help, here are must-read books you can’t miss this year.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1749315185949-5540f5d6549a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Fitness">
+        <div class="card-body">
+          <h5 class="card-title">Daily Fitness Habits</h5>
+          <p class="card-text">Boost your productivity and energy with just 15 minutes of exercise daily.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.unsplash.com/photo-1744400363852-d2eb4908b9a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Productivity">
+        <div class="card-body">
+          <h5 class="card-title">Mastering Productivity</h5>
+          <p class="card-text">Get more done in less time with these proven time-management techniques.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- About Section -->
+<section id="about" class="bg-light py-5">
+  <div class="container">
+    <div class="card shadow border-0">
+      <div class="card-body text-center p-4">
+        <h2 class="card-title text-primary mb-4">About Me</h2>
+        <p class="card-text">
+          Hi! I'm Rajneesh, a passionate web development intern with a keen interest in front-end technologies and user experience design.
+          Through this blog, I share what I learn, build, and explore in the world of tech — from JavaScript snippets and Bootstrap tricks 
+          to personal thoughts on productivity and growth in the developer journey.
+        </p>
+        <p class="card-text">
+          Whether you're just starting out in tech or you're a fellow developer, I hope you find something helpful or inspiring here. 
+         
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Connect with us:</p>
+    <div class="mb-2">
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a>
+      <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+    </div>
+    <p class="mb-0">&copy; 2025 MyBlog. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+S
